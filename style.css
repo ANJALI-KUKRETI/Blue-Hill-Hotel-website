@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Acme", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Righteous", cursive;
+  font-family: "Sora", sans-serif;
+  background-image: url("img/wallpaper.jpg");
+  backdrop-filter: blur(3px);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/* -----------------header------------------ */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgba(7, 7, 7, 0.7);
+  color: white;
+  height: 80px;
+  align-items: center;
+}
+#hotel_name {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+#content {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 10px 40px 20px 40px;
+  height: 50px;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+#hotel_name a {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  letter-spacing: 2px;
+  font-size: 40px;
+  /* font-family: "Permanent Marker", cursive; */
+}
+#hotel_name a:hover {
+  color: rgb(167, 160, 160);
+}
+
+#address {
+  margin-right: 70px;
+  letter-spacing: 1px;
+  line-height: 25px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: right;
+}
+.logo {
+  height: 64px;
+  border-radius: 50%;
+  width: 70px;
+  margin-left: 20px;
+}
+
+/*---------- navbar---------- */
+a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: rgba(7, 7, 7, 0.7);
+  height: 60px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a {
+  color: black;
+  font-size: 18px;
+  font-weight: bolder;
+  padding: 10px 15px 10px 15px;
+
+  border-radius: 30px;
+}
+
+nav a:hover {
+  background-color: rgba(128, 124, 124, 0.7);
+}
+
+/* ---------------main-------------- */
+.container {
+  display: flex;
+  transition: transform 0.5s;
+  /* flex-wrap: wrap; */
+}
+.middle {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* .inn {
+} */
+.inn2 {
+  font-family: "Permanent Marker", cursive;
+  color: whitesmoke;
+  font-size: 60px;
+  text-shadow: black 6px 5px 25px;
+}
+
+.inner_img {
+  height: 400px;
+  /* margin-left: 100px; */
+  margin-top: 50px;
+  box-shadow: 5px 5px 25px 3px;
+}
+
+.con {
+  display: flex;
+
+  justify-content: space-evenly;
+}
+
+.box {
+  color: whitesmoke;
+  background-color: rgb(3, 3, 3, 0.5);
+  margin: 30px;
+  padding: 40px;
+  border-radius: 10%;
+}
+h2 {
+  font-weight: bold;
+  padding-bottom: 10px;
+  /* font-family: "Permanent Marker", cursive; */
+  font-size: 40px;
+}
+.box a {
+  color: rgb(134, 176, 240);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.box a:hover {
+  color: chocolate;
+}
+
+.box p {
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+/* --------------section----------------- */
+section {
+  background-color: rgb(7, 7, 7, 0.9);
+  color: whitesmoke;
+  padding-bottom: 20px;
+  border-bottom: 4px solid gray;
+}
+.heading {
+  font-size: 40px;
+  font-weight: bold;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  text-align: center;
+  margin: 10px;
+}
+.box i {
+  margin: 0px 20px 0px 20px;
+  color: rgba(245, 222, 19, 0.884);
+}
+.hamburger {
+  display: none;
+  padding: 10px;
+}
+section p {
+  line-height: 25px;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  margin: 10px;
+}
+.con .icon {
+  display: none;
+}
+
+footer {
+  background-color: rgb(7, 7, 7, 0.9);
+  color: whitesmoke;
+  text-align: center;
+  padding: 20px;
+}
+
+.box:hover {
+  transform: scale(1.05);
+}
+
+@media screen and (max-width: 450px) {
+  #address {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 792px) {
+  /* nav {
+    display: none;
+  } */
+  .container {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 676px) {
+  .inner_img {
+    /* height: 250px; */
+    width: 100%;
+    height: auto;
+    /* margin: 20px;
+    box-sizing: border-box; */
+  }
+
+  header {
+    height: 150px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #address {
+    text-align: center;
+    margin-left: 70px;
+  }
+  #hotel_name a {
+    padding-right: 10px;
+  }
+  .inn2 {
+    margin-top: 25px;
+    font-size: 40px;
+  }
+  .box h2 {
+    font-size: 25px;
+  }
+  .box p {
+    font-size: 15px;
+  }
+  .heading {
+    font-size: 30px;
+    margin: 10px;
+  }
+  section p {
+    font-size: 15px;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 1132px) {
+  .container {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  nav a:not(:first-child) {
+    display: none;
+  }
+  nav .hamburger {
+    float: right;
+    display: block;
+  }
+}
